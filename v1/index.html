@@ -42,8 +42,8 @@ a{color:inherit;text-decoration:none}
 #progress{position:fixed;top:0;left:0;height:2px;width:0;background:var(--red);z-index:3000;transition:width .1s linear}
 
 /* NAV */
-header.nav{position:fixed;top:0;left:0;right:0;z-index:2000;padding:20px 28px;display:flex;align-items:center;justify-content:space-between;transition:padding .4s var(--ease)}
-header.nav.shrink{padding:12px 28px}
+header.nav{position:fixed;top:0;left:0;right:0;z-index:2000;padding:20px 28px;display:flex;align-items:center;justify-content:space-between;background:transparent;border-bottom:1px solid transparent;transition:padding .4s var(--ease),background .4s var(--ease),border-color .4s var(--ease)}
+header.nav.shrink{padding:12px 28px;background:rgba(0,0,0,.82);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom-color:var(--line)}
 .brand{display:flex;flex-direction:column;gap:5px;line-height:1}
 .brand .lw{font-family:'Jost';font-weight:500;font-size:21px;letter-spacing:.2em;color:#fff;position:relative;padding-bottom:6px}
 .brand .lw::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:2px;background:var(--red)}
