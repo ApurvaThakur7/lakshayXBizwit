@@ -4,9 +4,23 @@ Track every version and what changed. Add a new block at the top for each versio
 
 ---
 
-## v1.0 — 18 Jul 2026 — First draft (for internal review)
+## v2.0 — 18 Jul 2026 — Pricing & polish
 
 **Status:** Latest
+
+- Per-module investment added: every requirement card (R1–R14) now shows **Investment ₹2,00,000**.
+- Architecture table gains an **Investment** column and a total row: **₹28,00,000 for 14 modules**.
+- Nav bar gets a solid blurred background once scrolled, so the logo and links no longer merge with page content.
+- Fixed the Next Steps button sitting lower than the other nav links (class collision with the bottom CTA section).
+
+**Planned next (v3):**
+- Proof-of-work gallery — clicking a Proof card opens its screenshots / recordings in a lightbox (assets pending).
+
+---
+
+## v1.0 — 18 Jul 2026 — First draft (for internal review)
+
+**Status:** Superseded by v2.0
 
 - Full rebuild in Laqshya's actual brand: black canvas, white bold Archivo type, signature red (#ED1C24), target-dot logo + reticle motif.
 - All 14 requirements across 4 pillars (A Knowledge & Enablement, B Core Operations, C Growth & Creative, D Enterprise Expansion).
