@@ -10,6 +10,8 @@ Track every version and what changed. Add a new block at the top for each versio
 
 - **R7 (Proof of Play & Client Portal) is now the only Code-Based module.** R13 Finance MIS changed to Hybrid, R14 HR Automation changed to Low-Code — architecture table rows and requirement card footers updated together.
 - **Fixed pricing removed.** The "Investment" column is now **Relative Effort**, with bands by approach: Low-Code = ₹, Consulting = ₹, Hybrid = ₹₹, Code-Based = ₹₹₹. Same bands on all 14 requirement card footers; the ₹28,00,000 total row is gone.
+- **Readability fix in the red challenges card.** The global `.red` text-colour utility was bleeding into the "Operations & Execution" column, turning its bold item titles red-on-red (invisible) and making rows look misaligned. Titles are now white and the arrows align with them.
+- **Gradient accents (minimal).** The CTA's purple→pink→orange gradient now also appears on the scroll progress bar, the executive-summary stat numbers, and the pillar letters on hover.
 
 **Planned next (v4):**
 - Proof-of-work gallery — clicking a Proof card opens its screenshots / recordings in a lightbox (assets pending).
