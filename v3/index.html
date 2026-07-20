@@ -161,8 +161,8 @@ header.nav.shrink{padding:12px 28px;background:rgba(0,0,0,.82);backdrop-filter:b
 .pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
 .pillar{border:1px solid var(--line);border-radius:16px;padding:30px;position:relative;overflow:hidden;min-height:280px;display:flex;flex-direction:column;transition:.4s var(--ease);background:var(--surface)}
 .pillar:hover{border-color:var(--red);transform:translateY(-6px)}
-.pillar .pl{font-family:'Archivo';font-weight:900;font-size:64px;color:var(--surface-2);line-height:.8;transition:color .4s}
-.pillar:hover .pl{color:var(--red);background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.pillar .pl{font-family:'Archivo';font-weight:900;font-size:64px;line-height:.8;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;transition:filter .4s}
+.pillar:hover .pl{filter:brightness(1.35)}
 .pillar .tag{font-family:'Archivo';font-size:11px;font-weight:700;letter-spacing:.14em;color:var(--red);margin:14px 0 8px}
 .pillar h3{font-size:20px;margin-bottom:16px}
 .pillar ul{list-style:none;margin-top:auto}
