@@ -670,6 +670,7 @@ footer{border-top:1px solid var(--line);padding:56px 0 40px}
           <tr><td>R12</td><td>Vertical-Specific AI Modules</td><td><span class="tg code">Code-Based</span></td><td>Enterprise</td><td class="pr">₹5,00,000</td></tr>
           <tr><td>R13</td><td>Finance MIS (Future)</td><td><span class="tg">Hybrid</span></td><td>Enterprise</td><td class="pr">—</td></tr>
           <tr><td>R14</td><td>HR Automation</td><td><span class="tg">Low-Code</span></td><td>Enterprise</td><td class="pr">₹3,70,000</td></tr>
+          <tr class="total"><td></td><td>Total investment <span class="per">· excludes R4 (per-session) &amp; R13 (future)</span></td><td></td><td></td><td class="pr" id="inv-total">₹42,70,000</td></tr>
           <tr class="gst"><td colspan="5">All amounts are professional fees, exclusive of GST.</td></tr>
         </tbody>
       </table>
@@ -845,6 +846,17 @@ document.querySelectorAll('.rcard').forEach(card=>{
   const code=card.querySelector('.code'),b=card.querySelector('.inv b');
   if(code&&b&&PRICING[code.textContent.trim()])b.innerHTML=PRICING[code.textContent.trim()];
 });
+// total row: computed from PRICING, excluding R4 (per-session) and R13 (future)
+const totalCell=document.getElementById('inv-total');
+if(totalCell){
+  let t=0;
+  for(const k in PRICING){
+    if(k==='LABEL'||k==='R4'||k==='R13')continue;
+    const m=String(PRICING[k]).match(/[\d][\d,]*/);
+    if(m)t+=parseInt(m[0].replace(/,/g,''),10);
+  }
+  totalCell.textContent='₹'+t.toLocaleString('en-IN');
+}
 const effortTh=document.querySelector('table.arch thead th:last-child');
 if(effortTh)effortTh.textContent=PRICING.LABEL;
 document.querySelectorAll('.rcard .inv').forEach(d=>{
