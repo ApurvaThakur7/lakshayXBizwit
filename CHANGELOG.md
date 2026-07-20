@@ -23,6 +23,7 @@ Track every version and what changed. Add a new block at the top for each versio
 - **90-day delivery timeline** added to "How the engagement works", replacing the two-components line.
 - **Visual fixes:** delivery phase numbers 01–08 now gradient (were invisible dark-on-dark); red commercials card heading now white (was red-on-red).
 - **Legal line** added to the footer: prepared exclusively for Laqshya Media Group, for its consideration and acceptance; not a binding offer.
+- **Proof-of-work gallery.** All 7 proof cards are now clickable ("View the work ↗") and open a brand-styled lightbox with the real demo — videos for Data Enrichment, Invoicing, LinkedIn Outreach, Conceptualiser and Enterprise Ops; screenshots for Competitor Radar and CRM Portal. Media lives in `/assets/proof/` (the one deliberate exception to the self-contained-file rule — video can't be inlined).
 
 **Planned next (v4):**
 - Proof-of-work gallery — clicking a Proof card opens its screenshots / recordings in a lightbox (assets pending).
