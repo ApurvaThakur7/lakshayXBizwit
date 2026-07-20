@@ -8,3 +8,6 @@ node_modules/
 
 # Netlify local
 .netlify/
+
+.vercel
+.env*
